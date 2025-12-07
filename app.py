@@ -3,11 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 from datetime import datetime
-import mlflow
-import mlflow.sklearn  
-
-
-mlflow.set_experiment("patient_drug_response")
 
 with open("patient_drug_model_onehot.pkl", "rb") as f:
     model = pickle.load(f)
